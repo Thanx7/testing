@@ -1,0 +1,5 @@
+.gitignore only applies to untracked files.
+
+If you are tracking a file then .gitignore won't apply.
+
+1
