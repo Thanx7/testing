@@ -2,4 +2,4 @@
 
 If you are tracking a file then .gitignore won't apply.
 
-1
+git commit -a
