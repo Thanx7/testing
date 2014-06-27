@@ -1,9 +1,1 @@
-Let’s change a file that was already tracked.
-
-One more change.
-
-Plus one more change.
-
-Let’s say you edit and stage the README file again
-
-edited after being staged
+0
