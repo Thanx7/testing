@@ -1,0 +1,4 @@
+http://nvie.com/posts/a-successful-git-branching-model/
+
+http://git-scm.com/book/en/Getting-Started
+http://git-scm.com/book/ru/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5

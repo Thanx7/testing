@@ -1,0 +1,6 @@
+
+CATALINA_HOME=C:\apache-tomcat-6.0.32
+Path=%CATALINA_HOME%\bin
+
+CATALINA_HOME=C:\apache-tomcat-7.0.22
+Path=%CATALINA_HOME%\bin

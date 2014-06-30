@@ -1,9 +1,0 @@
-new one
-
-new one  -2
-
-and then edit the benchmarks.rb file without staging it
-
-That command compares what is in your working directory with what is in your staging area. The result tells you the changes you’ve made that you haven’t yet staged.
-
-If you want to see what you’ve staged that will go into your next commit, you can use git diff --cached. (In Git versions 1.6.1 and later, you can also use git diff --staged, which may be easier to remember.) This command compares your staged changes to your last commit.

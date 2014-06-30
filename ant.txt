@@ -1,0 +1,2 @@
+ANT_HOME=C:\apache-ant-1.7.1
+Path=%ANT_HOME%\bin

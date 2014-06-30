@@ -1,0 +1,48 @@
+
+One can find find dependencies here:
+http://mvnrepository.com/
+
+mvn --version
+
+D:
+cd D:\epam\issueTracker
+
+mvn clean source:jar package
+
+
+c:\apache-tomcat-7.0.50\webapps\
+
+C:\apache-tomcat-7.0.50\bin\startup.bat
+
+http://localhost:8080/issueTracker-2.4/
+
+
+
+put hibernate.cfg.xml
+in D:\epam\issueTracker\src\main\resources\
+
+*** JRE 1.7 ***
+  <properties>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
+
+Make the jar/war executable
+Define maven-jar-plugin in pom.xml, and configure the manifest file via configuration tag.
+
+  <build>
+  <plugins>
+  	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-jar-plugin</artifactId>
+		<version>2.4</version>
+		<configuration>
+	  	<archive>
+		    <manifest>
+				<mainClass>Runner</mainClass>
+	    	</manifest>
+	  	</archive>
+		</configuration>
+  	</plugin>
+  </plugins>
+  </build>

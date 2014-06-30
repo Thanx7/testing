@@ -1,0 +1,2 @@
+Ctrl+K+U - large
+Ctrl+K+L - small
