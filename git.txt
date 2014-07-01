@@ -121,3 +121,11 @@ git tag -s v1.5 -m "my signed 1.5 tag"
 Lightweight Tags
 To create a lightweight tag, don’t supply the -a, -s, or -m option:
 git tag v1.4-lw
+
+Tagging Later
+git tag -a v1.2 -m "version 1.2" 14e7
+
+Sharing Tags
+By default, the git push command doesn’t transfer tags to remote servers. You will have to explicitly push tags to a shared server after you have created them. This process is just like sharing remote branches — you can run git push origin [tagname]:
+git push origin First_tag
+

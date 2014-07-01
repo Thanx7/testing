@@ -1,6 +1,9 @@
+Main computer: EPBYGOMW0318T0
+User: CT-SA_Admin
+Pwd: Kl******
 
 ContentServer
-Network settings:
+Network settings: EPBYGOMW0318T1
 Attached to: Host-only Adapter
 Name: VirtualBox Host-only Ethernet Adapter
 Promiscuous Mode: Allow All
@@ -9,7 +12,19 @@ Cable Connected (Yes)
 IP address: 192.168.56.101
 Subnet mask: 255.255.255.0
 
-SQLServer:
+Installation Owner User Name:	CT-SA_Admin
+Installation Owner Domain:		EPBYGOMW0318T1
+
+Database User Name:		CONDORNA
+Database User Password:	Kl*****_***
+
+
+
+SQLServer installation: one have to point right collation: it has to be case-sensitive
+SQL_Latin1_General_CP1_CS_AS
+SQL_Latin1_General_CS_AS
+
+SQLServer: EPBYGOMW0318T2
 Network settings:
 Attached to: Host-only Adapter
 Name: VirtualBox Host-only Ethernet Adapter
@@ -19,6 +34,16 @@ Cable Connected (Yes)
 IP address: 192.168.56.102
 Subnet mask: 255.255.255.0
 
+
+
+
 Check:
 ping 192.168.56.102
 ping 192.168.56.101
+
+SQLServer settings for sa user:
+Pwd: Kl******
+http://stackoverflow.com/questions/9137836/enable-remote-connections-to-sql-express-with-a-script
+TCP/IP properties - TCP/IP enabled
+Server properties - Security - Server authentication - SQL Server and Window Authentication mode
+sa - remove Enforce password policy
