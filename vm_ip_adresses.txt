@@ -1,0 +1,24 @@
+
+ContentServer
+Network settings:
+Attached to: Host-only Adapter
+Name: VirtualBox Host-only Ethernet Adapter
+Promiscuous Mode: Allow All
+MAC Addresses have to be different on each VM!
+Cable Connected (Yes)
+IP address: 192.168.56.101
+Subnet mask: 255.255.255.0
+
+SQLServer:
+Network settings:
+Attached to: Host-only Adapter
+Name: VirtualBox Host-only Ethernet Adapter
+Promiscuous Mode: Allow All
+MAC Addresses have to be different on each VM!
+Cable Connected (Yes)
+IP address: 192.168.56.102
+Subnet mask: 255.255.255.0
+
+Check:
+ping 192.168.56.102
+ping 192.168.56.101

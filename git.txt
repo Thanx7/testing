@@ -85,7 +85,7 @@ Undoing Things
 git reset HEAD <file>...
  Unmodifying a Modified File
 git checkout -- sample5.txt
-( You should also realize that this is a dangerous command: any changes you made to that file are gone — you just copied another file over it.)
+(You should also realize that this is a dangerous command: any changes you made to that file are gone — you just copied another file over it.)
 
 Showing Your Remotes
 git remote
@@ -100,3 +100,12 @@ git push origin master
 
 Inspecting a Remote
 git remote show origin
+
+Renaming Remotes
+git remote rename oldBranchName newBranchName
+Removing Remotes
+git remote rm branch
+
+Listing Your Tags
+git tag
+git tag -l "2014*"
