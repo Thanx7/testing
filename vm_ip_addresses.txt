@@ -18,6 +18,8 @@ Installation Owner Domain:		EPBYGOMW0318T1
 Database User Name:		CONDORNA
 Database User Password:	Kl*****_***
 
+FakeSMTP
+http://nilhcem.github.io/FakeSMTP/download.html
 
 
 SQLServer installation: one have to point right collation: it has to be case-sensitive
