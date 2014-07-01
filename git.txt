@@ -117,3 +117,7 @@ git show v1.4
 
 Signed Tags:
 git tag -s v1.5 -m "my signed 1.5 tag"
+
+Lightweight Tags
+To create a lightweight tag, don’t supply the -a, -s, or -m option:
+git tag v1.4-lw
