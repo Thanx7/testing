@@ -109,3 +109,11 @@ git remote rm branch
 Listing Your Tags
 git tag
 git tag -l "2014*"
+
+Creating an annotated tag:
+git tag -a v1.4 -m "my version 1.4"
+
+git show v1.4
+
+Signed Tags:
+git tag -s v1.5 -m "my signed 1.5 tag"
