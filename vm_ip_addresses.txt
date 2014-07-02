@@ -51,3 +51,15 @@ http://stackoverflow.com/questions/9137836/enable-remote-connections-to-sql-expr
 TCP/IP properties - TCP/IP enabled
 Server properties - Security - Server authentication - SQL Server and Window Authentication mode
 sa - remove Enforce password policy
+
+
+
+SQLServer: EPBYGOMW0318T3
+Network settings:
+Attached to: Host-only Adapter
+Name: VirtualBox Host-only Ethernet Adapter
+Promiscuous Mode: Allow All
+MAC Addresses have to be different on each VM!
+Cable Connected (Yes)
+IP address: 192.168.56.103
+Subnet mask: 255.255.255.0
