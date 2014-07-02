@@ -2,6 +2,8 @@ Main computer: EPBYGOMW0318T0
 User: CT-SA_Admin
 Pwd: Kl******
 
+
+
 ContentServer
 Network settings: EPBYGOMW0318T1
 Attached to: Host-only Adapter
@@ -18,8 +20,11 @@ Installation Owner Domain:		EPBYGOMW0318T1
 Database User Name:		CONDORNA
 Database User Password:	Kl*****_***
 
-FakeSMTP
+FakeSMTP port25
 http://nilhcem.github.io/FakeSMTP/download.html
+
+dm_bof_registry: pwd: Kl*****_***
+
 
 
 SQLServer installation: one have to point right collation: it has to be case-sensitive
@@ -35,9 +40,6 @@ MAC Addresses have to be different on each VM!
 Cable Connected (Yes)
 IP address: 192.168.56.102
 Subnet mask: 255.255.255.0
-
-
-
 
 Check:
 ping 192.168.56.102
