@@ -129,3 +129,11 @@ Sharing Tags
 By default, the git push command doesn’t transfer tags to remote servers. You will have to explicitly push tags to a shared server after you have created them. This process is just like sharing remote branches — you can run git push origin [tagname]:
 git push origin First_tag
 
+git checkout -b hotfix
+git add --all
+git commit -m "fixed the broken email address"
+
+You can run your tests, make sure the hotfix is what you want, and merge it back into your master branch to deploy to production. You do this with the git merge command:
+
+$ git checkout master
+$ git merge hotfix
