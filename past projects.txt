@@ -1,0 +1,97 @@
+Company: EPAM Systems
+
+Description: JEE training project "Issue Tracker"
+
+Job Position: Junior Software Engineer
+
+Project Roles: Development
+
+Customer: n/a
+
+Project: JEE training project "Issue Tracker" is a program which lets its users organise the workflow of the issues that could happen in the time of development. There are two parts of the program, one of them let user to login and to have the respective permissions according to its level: guest, user or administrator. The second part is created for the workflow of the issue. Firstly issue is created, then it is follow to its process when "Project", "Status", "Resolution", "Priority", "Type" and many other options could be added or edited in this issue. Later this issue could be closed or reopened.
+
+Team: Group consists of 20 people.
+
+Database: Denwer + MySQL, Derby DB
+
+Tools: Eclipse IDE, Sublime Text 2, Total Commander
+
+Technologies: JavaEE, JSP, Hibernate ORM, Spring MVC, Java Script, jQuery, Bootstrap, Git, Maven
+
+Participation: I have participated in creation of this program from its beginning. Bootstrap template was installed which brought the attractive appearance to the user interface. Firstly program was created on the base of Java EE servlet technology with the help of JDBC, and later i have changed the program to function with the help of Hibernate ORM and Spring MVC.
+
+
+
+http://indiatourism.ws/
+
+Company: n/a
+
+Description: Tourist project in the Internet about States of India
+
+Job Position: Site Administrator
+
+Project Roles: Administrator, development, sustaining engineering
+
+Customer: n/a
+
+Project: Tourist project "India tourism" was made in 2011-2013 years. The main purpose of the project is to show the beauty of India while you look through the pictures of the site. The site contains 6,840 unique photographs of India.
+
+Team: 1 Administrator and UI designer, 1 Content manager
+
+Database: MySQL database is placed on the remote hosting.
+
+Tools: Eclipse IDE, Sublime Text 2, Total Commander
+
+Technologies: JavaSE, Java Script, php, HTML5, CSS
+
+Participation: I have created this site in 2011. Firstly i have bought the domain name. I was three times in India, one month each year in 2011, 2012 and 2013, and it brings me the opportunity to collect photo content for the site. I wrote special plugins in Adobe Photoshop to provide automatic process with the .NEF photographs. Later i wrote a php programm which let me to install a user interface. I used Java SE to change first version of the project from HTML4 to HTML5. In the end of 2013 i have created the russian language version with the help of Java SE, you could find it by the address http://indiatourism.ws/ru/.
+
+
+
+http://chernomorskoe.info/
+
+Company: n/a
+
+Description: Tourist project in the Internet about Crimean city Chernomorskoe.
+
+Job Position: Site Administrator
+
+Project Roles: Administrator, development, sustaining engineering
+
+Customer: n/a
+
+Project: Internet site "Chernomorskoe.info" was made in 2006-2012 years. The main purpose of the project was to create the city community. People have an opportunity to share their thoughts and to advertise their tourist objects now.
+
+Team: 1 Administrator, 1 Content manager, 1 Software engineer
+
+Database: MySQL database is placed on the remote hosting.
+
+Tools: Sublime Text 2, Total Commander
+
+Technologies: php, HTML5, CSS
+
+Participation: After my visiting this city in Western Crimea i have decided to create tourist site about this region. I have made a php program which provide the appropriate UI. I have installed the phpBB community to let the people talk with each other.
+
+
+
+http://avflower.com/
+
+Company: n/a
+
+Customer: n/a
+
+Job Position: Site Administrator
+
+Project Roles: Administrator, development, sustaining engineering
+
+Project: Internet site "AVFlower.com" was made in 2004-2010 years. The main purpose of the project was to create the site about flowers. Those years i was connected with the home floriculture and i was interested to advertise on the Internet. Later this site became not only my personal project but the popular russian flower community.
+
+Team: 1 Administrator, 1 Content manager, 1 UI designer
+
+Database: MySQL database is placed on the remote hosting.
+
+Tools: Akelpad, Total Commander, Eclipse, IDE for AS3 (flash movies)
+
+Technologies: php, HTML5, CSS, Action Script 2 and Action Script 3
+
+Participation: I created UI, as well as the php program which used as a handy CMS system. Later phpBB community was installed on this site also.

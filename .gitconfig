@@ -1,0 +1,8 @@
+[user]
+	name = Thanx7
+	email = Aliaksandr_Doubeikovsky@epam.com
+[core]
+	editor = 'C:\\Program Files\\Sublime Text 2\\sublime_text.exe' -w
+[alias]
+	last = log -1 HEAD
+	st = status
