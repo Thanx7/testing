@@ -61,20 +61,20 @@ The git rm command does that and also removes the file from your working directo
 
 git rm -f
 (if i deleted/modified the file manually before "git rm")
-If you modified the file and added it to the index already, you must force the removal with the -f option. This is a safety feature to prevent accidental removal of data that hasn’t yet been recorded in a snapshot and that can’t be recovered from Git.
+ If you modified the file and added it to the index already, you must force the removal with the -f option. This is a safety feature to prevent accidental removal of data that hasn’t yet been recorded in a snapshot and that can’t be recovered from Git.
 
 git rm --cached readme.txt
-Another useful thing you may want to do is to keep the file in your working tree but remove it from your staging area. In other words, you may want to keep the file on your hard drive but not have Git track it anymore. This is particularly useful if you forgot to add something to your .gitignore file and accidentally staged it, like a large log file or a bunch of .a compiled files. To do this, use the --cached option.
+ Another useful thing you may want to do is to keep the file in your working tree but remove it from your staging area. In other words, you may want to keep the file on your hard drive but not have Git track it anymore. This is particularly useful if you forgot to add something to your .gitignore file and accidentally staged it, like a large log file or a bunch of .a compiled files. To do this, use the --cached option.
 
 git mv README README.txt
 *** optional lines ***
-$ mv README README.txt
-$ git rm README
-$ git add README.txt
+mv README README.txt
+git rm README
+git add README.txt
 ***
 Moving Files
-Git figures out that it’s a rename implicitly, so it doesn’t matter if you rename a file that way or with the mv command. The only real difference is that mv is one command instead of three — it’s a convenience function.
-More important, you can use any tool you like to rename a file, and address the add/rm later, before you commit.
+ Git figures out that it’s a rename implicitly, so it doesn’t matter if you rename a file that way or with the mv command. The only real difference is that mv is one command instead of three — it’s a convenience function.
+ More important, you can use any tool you like to rename a file, and address the add/rm later, before you commit.
 
 git log --pretty=oneline
 git log --pretty=format:"%h - %an, %ar : %s"
@@ -119,13 +119,26 @@ Signed Tags:
 git tag -s v1.5 -m "my signed 1.5 tag"
 
 Lightweight Tags
-To create a lightweight tag, don’t supply the -a, -s, or -m option:
+ To create a lightweight tag, don’t supply the -a, -s, or -m option:
 git tag v1.4-lw
 
 Tagging Later
 git tag -a v1.2 -m "version 1.2" 14e7
 
 Sharing Tags
-By default, the git push command doesn’t transfer tags to remote servers. You will have to explicitly push tags to a shared server after you have created them. This process is just like sharing remote branches — you can run git push origin [tagname]:
+ By default, the git push command doesn’t transfer tags to remote servers. You will have to explicitly push tags to a shared server after you have created them. This process is just like sharing remote branches — you can run git push origin [tagname]:
 git push origin First_tag
+ If you have a lot of tags that you want to push up at once, you can also use the --tags option to the git push command. This will transfer all of your tags to the remote server that are not already there.
+git push origin --tags
 
+Git Aliases
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+
+git config --global alias.last "log -1 HEAD"
+ This way, you can see the last commit easily:
+git last
+
+Git Branching
