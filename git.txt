@@ -142,3 +142,14 @@ git config --global alias.last "log -1 HEAD"
 git last
 
 Git Branching
+ Let’s say you create a new branch called testing. You do this with the git branch command:
+git branch testing
+ To switch to an existing branch, you run the git checkout command. Let’s switch to the new testing branch:
+git checkout testing
+ Let’s switch back to the master branch:
+git checkout master
+
+ To create a branch and switch to it at the same time, you can run the git checkout command with the -b switch:
+git checkout -b iss53
+ Switched to a new branch 'iss53'
+
