@@ -1,0 +1,3 @@
+http://www.jetbrains.com/teamcity/
+http://jenkins-ci.org/
+http://cruisecontrol.sourceforge.net/index.html
