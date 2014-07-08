@@ -18,6 +18,11 @@
             <arg value="-m"/>
             <arg value="${message}"/>
         </exec>
+        <exec executable="cmd" dir="${basedir}"> 
+            <arg value="/c"/>
+            <arg value="pause"/> 
+        </exec>
+
     </target>
     
 </project>
