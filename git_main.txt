@@ -181,3 +181,7 @@ Switched to a new branch 'sf'
 
  Deleting Remote Branches
 git push origin :serverfix
+
+ Rebasing
+git checkout experiment
+git rebase master
