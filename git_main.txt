@@ -146,8 +146,6 @@ Git Branching
 git branch testing
  To switch to an existing branch, you run the git checkout command. Let’s switch to the new testing branch:
 git checkout testing
- Let’s switch back to the master branch:
-git checkout master
 
  To create a branch and switch to it at the same time, you can run the git checkout command with the -b switch:
 git checkout -b iss53
