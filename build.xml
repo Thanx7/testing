@@ -5,13 +5,13 @@
 
     <target name="build">    
         <echo message="GIT Tag - ${git.tag}"/>   
-        <exec executable="cmd" dir="${project.home}" failonerror="true"> 
+        <exec executable="cmd" dir="${basedir}"> 
             <arg value="/c"/>
             <arg value="git"/> 
             <arg value="add"/> 
             <arg value="--all"/>
         </exec>
-        <exec executable="cmd" dir="${project.home}" failonerror="true"> 
+        <exec executable="cmd" dir="${basedir}"> 
             <arg value="/c"/>
             <arg value="git"/> 
             <arg value="commit"/> 
