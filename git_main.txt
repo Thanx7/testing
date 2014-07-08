@@ -186,3 +186,5 @@ git push origin :serverfix
  The Basic Rebase
 git checkout experiment
 git rebase master
+
+ There is no difference in the end product of the integration (whether merge or rebase), but rebasing makes for a cleaner history.
