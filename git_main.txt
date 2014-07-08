@@ -141,6 +141,8 @@ git config --global alias.last "log -1 HEAD"
  This way, you can see the last commit easily:
 git last
 
+
+
 Git Branching
  Let’s say you create a new branch called testing. You do this with the git branch command:
 git branch testing
@@ -165,3 +167,14 @@ git branch -d hotfix
 
  To see the last commit on each branch, you can run git branch -v:
 git branch -v
+
+ Tracking Branches
+git checkout --track origin/serverfix
+Branch serverfix set up to track remote branch serverfix from origin.
+Switched to a new branch 'serverfix'
+
+ To set up a local branch with a different name than the remote branch, you can easily use the first version with a different local branch name:
+git checkout -b sf origin/serverfix
+Branch sf set up to track remote branch serverfix from origin.
+Switched to a new branch 'sf'
+ Now, your local branch sf will automatically push to and pull from origin/serverfix.
