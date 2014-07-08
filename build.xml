@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Ant plus Git" default="build">
+
+    <property file="${basedir}/build.properties"/>
+
+    <target name="build">       
+        <exec executable="cmd" dir="${project.home}" failonerror="true"> 
+            <arg value="/c"/>
+            <arg value="git"/> 
+            <arg value="add"/> 
+            <arg value="--all"/>
+        </exec>
+        <exec executable="cmd" dir="${project.home}" failonerror="true"> 
+            <arg value="/c"/>
+            <arg value="git"/> 
+            <arg value="commit"/> 
+            <arg value="-m"/>
+            <arg value="${message}"/>
+        </exec>
+    </target>
+    
+    <!--
+    <target name="build">       
+        <echo message="GIT Tag - ${git.tag}"/>
+        <exec executable="cmd" dir="${project.home}" failonerror="true"> 
+            <arg value="/c"/>
+            <arg value="git"/> 
+            <arg value="fetch"/> 
+            <arg value="- -all"/>
+        </exec>
+        <exec executable="cmd" dir="${project.home}" failonerror="true"> 
+            <arg value="/c"/>
+            <arg value="git"/> 
+            <arg value="checkout"/> 
+            <arg value="${git.tag}"/>
+        </exec>
+        <exec executable="cmd" dir="${project.home}" failonerror="true"> 
+            <arg value="/c"/>
+            <arg value="git"/> 
+            <arg value="pull"/> 
+            <arg value="origin"/>
+            <arg value="${git.tag}"/>
+        </exec>             
+    </target>
+    -->
+
+</project>
