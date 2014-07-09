@@ -188,3 +188,8 @@ git checkout experiment
 git rebase master
 
  There is no difference in the end product of the integration (whether merge or rebase), but rebasing makes for a cleaner history.
+
+ The Perils of Rebasing
+ Ahh, but the bliss of rebasing isn’t without its drawbacks, which can be summed up in a single line.
+ ===
+ If you treat rebasing as a way to clean up and work with commits before you push them, and if you only rebase commits that have never been available publicly, then you’ll be fine. If you rebase commits that have already been pushed publicly, and people may have based work on those commits, then you may be in for some frustrating trouble.
