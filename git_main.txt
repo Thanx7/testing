@@ -198,3 +198,59 @@ git rebase master
   4.2 Git on the Server - Getting Git on a Server
   In order to initially set up any Git server, you have to export an existing repository into a new bare repository - a repository that doesn’t contain a working directory. This is generally straightforward to do. In order to clone your repository to create a new bare repository, you run the clone command with the --bare option. By convention, bare repository directories end in .git, like so:
 git clone --bare testing testing.git
+
+
+Git Workflow: Without a server
+http://stackoverflow.com/questions/5947064/git-workflow-without-a-server
+***
+What you need to do first, is to think through what kind of workflow you have already and configure git to work with that. Once you have something up and running, you can fine tune it. There is no need to setup a separate computer as a server. If you are accustomed to have a central repository all you need to do is to create a bare repository that everyone pushes to. Why not on the local network?
+
+Central repo:
+
+mkdir foo.git
+cd foo.git
+git init --bare
+Your repo:
+
+mkdir foo
+cd foo
+git init
+// add files
+git add .
+git commit -m "Initial commit"
+git remote add origin //path/to/central/repo/foo.git
+git push origin master
+Other repos:
+
+git clone //path/to/central/repo/foo.git
+Now anyone can push and pull directly from master branch. This should be enough to get you started.
+***
+
+***
+!!! How would I use "git push" to sync out of a host that I cannot pull from?
+
+When you work on two machines, each with its own work tree, a typical way to synchronise between them is to run git pull from each other. However, you may be able to make a TCP connection only in one direction but not in the other direction in certain situations (e.g. you have a firewall between them, one machine is not running an ssh server, or one machine has intermittent connectivity). Suppose you start a project on machine A (mothership), and clone from there to a machine B (satellite). You work on B and would want to slurp the change back to your repository on machine A. Even if you wanted to, you cannot run git fetch on machine A to fetch from B, as B does not allow incoming connections. What should you do in such a case?
+
+You can realize that a push is a mirror operation of a fetch and take advantage of it. If B were not firewalled, you would instead run fetch on A from B. And such a fetch is arranged to fetch 'master' from B and store that in 'refs/remotes/B/master' in A.
+
+Pushing 'master' branch on B to 'master' branch on A, however, is never what you would want to do in such a case. Push is a reverse of fetch in the sense that it propagates the objects and update the branch tips, but does not touch the working tree in the target repository, and you (and Git) will be utterly confused when you go back to machine A after you update 'master' that way, as the contents of 'master' have changed, but your working tree still reflects an older state.
+
+So the simple solution to work around such a firewalled setup is to push 'master' from B into 'refs/remotes/B/master' of A, like this:
+
+machineB$ git push machineA:repo.git master:refs/remotes/B/master
+
+When you go back to machineA to work further, it is as if you did a git fetch from machineB, like this:
+
+machineA$ git fetch machineB:repo.git master:refs/remotes/B/master
+
+When you are ready to integrate the changes you did on machineB into the master branch on machineA, you can:
+
+machineA$ git merge B/master ;# shorthand for refs/remotes/B/master
+
+This is no different from the case where you actually pulled from B on A. You can set up your .git/config file to largely automate the above git push, so that you can just say:
+
+machineB$ git push
+
+See also http://thread.gmane.org/gmane.comp.version-control.git/42506/focus=42685
+!!! https://git.wiki.kernel.org/index.php/GitFaq#push-is-reverse-of-fetch
+***
