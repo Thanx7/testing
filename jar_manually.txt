@@ -1,0 +1,25 @@
+D:\repo\elevator\
+
+javac -cp lib\log4j-1.2.12.jar src\main\java\Runner.java src\main\java\by\gsu\epamlab\*.java src\main\java\by\gsu\epamlab\beans\*.java
+
+	Run JVM without JAR file:
+
+java -classpath "lib\log4j-1.2.12.jar;src\main\java" Runner
+
+
+
+
+
+	Execute with the help of JAR file
+D:\extract\by\gsu\epamlab\beans\
+D:\extract\org\apache\log4j\ (log4j-1.2.12.jar)
+D:\extract\src\main\resources\
+D:\extract\Runner.class
+D:\extract\Runner.java
+
+	Extracting the Contents of a JAR File:
+jar xf elevator.jar
+
+jar -cfve elevator.jar Runner Runner.class by\* org\* src\*
+
+java -jar elevator.jar
